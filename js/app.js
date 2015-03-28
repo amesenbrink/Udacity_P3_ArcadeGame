@@ -17,7 +17,7 @@ var Enemy = function(x, y) {
     this.x = x;
     this.y = y;
     this.speed = getNum(50, 300);
-    this.row;
+    this.size = 30
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
@@ -34,7 +34,6 @@ Enemy.prototype.update = function(dt) {
     if (this.x > 555) {
         this.x = -45;
     }
-
 
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
@@ -60,26 +59,29 @@ var allEnemies = [new Enemy(-45,60), new Enemy(-45,226), new Enemy(-45,309), new
 var player = function() {
     this.x = 202;
     this.y = 475;
+    this.size = 25;
     this.sprite = 'images/char-boy.png';
-
 }
 
 
  player.prototype.update = function(x, y) {
-  console.log(this.x, this.y)
-  
+   console.log(this.x, this.y);
+}
+ 
+
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-}
 
 // Draw the enemy on the screen, required method for game
 player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
 
-player.prototype.handleInput = function(direction) {
-    switch(direction) {
+player.prototype.handleInput = function(key) {
+    switch(key) {
+        case 'space':
+            break;
         case 'left':
             if (this.x - 100 >= 0 ) {
                 this.x = this.x - 100;
@@ -113,8 +115,22 @@ document.addEventListener('keyup', function(e) {
         37: 'left',
         38: 'up',
         39: 'right',
-        40: 'down'
+        40: 'down',
+        32: 'space'
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+function checkCollisions() {   
+      allEnemies.forEach(function(enemy) {
+      console.log("player " + player.x + " " + player.y + " enemy " + enemy.x + enemy.y )
+      if (player.x < enemy.x + enemy.size &&
+        player.x + player.size > enemy.x &&
+        player.y < enemy.y + enemy.size &&
+        player.size + player.y > enemy.y){
+        console.log("he's dead Jim")
+        }
+    });
+}
