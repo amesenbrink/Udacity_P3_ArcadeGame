@@ -84,18 +84,6 @@ var Engine = (function(global) {
         checkCollisions();
     }
 
-//  function checkCollisions() {   
-//       allEnemies.forEach(function(enemy) {
-//       console.log("enemy" + player.x + player.y + "enemy" + enemy.x + enemy.y )
-//       if (player.x < enemy.x + enemy.size &&
-//         player.x + player.size > enemy.x &&
-//         player.y < enemy.y + enemy.size &&
-//         player.size + player.y > enemy.y){
-//         console.log("he's dead Jim")
-//         }
-//     });
-// }
-
 //     var checkCollisions = function() {
 //     console.log("checking collision");
 //     console.log()
