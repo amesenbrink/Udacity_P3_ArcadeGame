@@ -1,0 +1,125 @@
+Adam M.(11:20:40 AM): If you don't have time for this just let me know. If you do, please take a look at my game, I need a few tips. https://github.com/amesenbrink/Udacity_P3_ArcadeGame
+Right now, I'm trying to figure out, once the Enemy instances leave that canvas (x > 600) I need to get rid of them right? What should I be doing to kill that instance of the Enemy object.   
+    Adam M.(11:21:34 AM): I tried using shift() and splice() but I can't do that at > than 600 because it remove items every single tick, because it's always greater than 600 after it hits 600.  
+    Adam M.(11:21:42 AM): whenever you have time.  
+    Jonathan(11:20:58 AM): ok, I will look later this afternoon  
+    Adam M.(11:22:06 AM): app.js is mine, they wrote the rest.  
+    Jonathan(3:26:14 PM): did you ever figure it out  
+    Jonathan(3:26:18 PM): this is my first break  
+    Adam M.(3:27:52 PM): no but if you don't have time... dont' worry about it.  
+    Adam M.(3:29:10 PM): I know I need to kill the instance of an object at a set point, but I'm not quite sure how to do that.  
+    Adam M.(3:31:47 PM): I had set this up to remove them.
+
+Enemy.prototype.update = function(dt) {
+this.x = this.x + this.speed * dt;
+// added something like this
+
+
+}  
+    Adam M.(3:32:07 PM): oops  
+    Adam M.(3:32:10 PM): Enemy.prototype.update = function(dt) {
+this.x = this.x + this.speed * dt;
+
+// added something like this
+}  
+    Adam M.(3:32:35 PM): did it again.
+
+allEnemys.shift()  
+    Jonathan(3:31:44 PM): i was going to say  
+    Jonathan(3:32:27 PM): well you have an array of the 4 enemies right?  
+    Adam M.(3:33:26 PM): I think that repeats the shift() because that enemy my tick a few more times before it's actually the on deleted.  
+    Adam M.(3:33:28 PM): yes  
+    Adam M.(3:33:44 PM): var allEnemies = [new Enemy(), new Enemy(), new Enemy(), new Enemy()];  
+    Jonathan(3:33:35 PM): yeah, so can't you just overwrite the enemy in that array to get rid of it  
+    Jonathan(3:34:02 PM): the garbage collector will then get rid of the unused object instance  
+    Adam M.(3:35:31 PM): so once it clears the edge of the canvas it will automatically go away?  
+    Jonathan(3:34:59 PM): it has been a really long while since I have done this...  
+    Adam M.(3:36:07 PM): ok that's fine.   
+    Jonathan(3:35:35 PM): canvas/game js is very different than DOM manipulation JS, just have to switch my hats  
+    Adam M.(3:36:35 PM): I didn't want to bother you with it anyway.   
+    Jonathan(3:35:47 PM): no worries, I need a break  
+    Jonathan(3:35:55 PM): I am done for the day anyways  
+    Adam M.(3:38:15 PM): I'd like to be, but I did just finish something and I don't really want to start the next thing.  
+    Jonathan(3:41:10 PM): why do you want to delete the enemy?  
+    Adam M.(3:43:12 PM): Once it's off the screen I want to get rid of it and create more.   
+    Jonathan(3:42:41 PM): why not just track once it is off the screen and then reset its x value  
+    Jonathan(3:42:48 PM): once it reaches a certain x  
+    Jonathan(3:43:19 PM): so when x > 600 set x=0 and rowSelect = getNum(4)  
+    Adam M.(3:44:33 PM): I can do that, I wanted to create a bunch of enemies, I guess I could accomplish that buy adding more and creating some type of random delay to start them off.  
+    Jonathan(3:44:33 PM): allEnemies[1] = your first enemy object  
+    Jonathan(3:44:48 PM): if you set it to something else you kill the reference and the GC will delete it  
+    Jonathan(3:45:01 PM): sorry allEnemies[0]  
+    Adam M.(3:46:18 PM): i just got focused on getting rid of them.  
+    Adam M.(3:46:45 PM): figured there had to be and easy way, but I suppose If I want to do that I shouldn't start with an array of 4 enemies.  
+    Jonathan(3:46:21 PM): so create a helper function that generates enemies (randomlly) then once an enemy reaches x>600  
+    Jonathan(3:46:44 PM): run the helper function that replaces the Enemy in the existing array...thus deleting it and generating a new one  
+    Adam M.(3:47:58 PM): when I did that it created an overlapping line of enemies. I new every clock tick.   
+    Adam M.(3:48:21 PM): I don't think I handled the removal correctly though.  
+    Jonathan(3:47:58 PM): did you try "delete allEnemies[0]"  
+    Jonathan(3:48:28 PM): then allEnemies[0] = new Enemy()  
+    Jonathan(3:48:45 PM): i don't think you even have to use the delete call  
+    Jonathan(3:49:32 PM): that enemy object is referenced by allEnemies[0] if you set that reference to a new object, the GC should delete the old object (now non-referenced) automatically'  
+    Jonathan(3:50:20 PM): that was the big thing with Java Garbage Collection...you can just dereference and object and the GC will clean it up  
+    Jonathan(3:50:40 PM): unlike C/C++ where it just stays in memory till you destroy the actual object  
+    Jonathan(3:50:59 PM): thats why java apps don't have nearly as many memory leaks  
+    Adam M.(3:52:19 PM): Yeah, I guess that's what got me thinking that way, I just have this thing running off to infinity and I need to get rid of it.  
+    Jonathan(3:52:00 PM): thats why I am saying you should create a function like getNum() that generates Enemies for you  
+    Jonathan(3:52:50 PM): then when an enemy reaches a certain x value you can then point the player, then generate a new enemy in its place  
+    Jonathan(3:53:04 PM): this would then delete its reference and the gc would destroy it  
+    Adam M.(3:55:50 PM): Enemy.prototype.new = function(){
+allEnemies.push(new Enemy)
+}  
+    Jonathan(3:54:56 PM): JS doesn't have true object/classes so you can't really do it OO, but that would be a way you could handle it  
+    Adam M.(4:00:05 PM): now here is the dumb question, "this" is the current instance of an object on each loop, but how do I find out what Index of allEnemies "this" is?  
+    Jonathan(3:59:57 PM): well, you could pass it a slot value  
+    Jonathan(4:00:02 PM): and just store it that way  
+    Jonathan(4:00:07 PM): on the object itself  
+    Jonathan(4:00:47 PM): not the best solution  
+    Jonathan(4:01:15 PM): var allEnemies = [new Enemy(0), new Enemy(1), new Enemy(2), new Enemy(3)];  
+    Jonathan(4:01:25 PM): var Enemy = function(slot) {
+need a list of possible rows
+this.row = [60,145,220,310]
+I needed a way to get the row
+this.rowSelect = getNum(4)
+this.x = 0;
+//each enemy picks a row at random.
+this.y = this.row[this.rowSelect]
+this.speed = 50;
+this.row;
+Variables applied to each of our instances go here,
+we've provided one for you to get started
+
+The image/sprite for our enemies, this uses
+a helper we've provided to easily load images
+this.sprite = 'images/enemy-bug.png';
+}  
+    Jonathan(4:01:33 PM): this.slot = slot;  
+    Adam M.(4:02:35 PM): Yeah, that's why I couldn't delete them before.  
+    Adam M.(4:03:28 PM): there's not refrence to the index in the array.  
+    Adam M.(4:04:32 PM): maybe I'll just say no more than 8 enemies on the screen, and reuse them. then create a delay before just placing all 8.  
+    Adam M.(4:04:46 PM): might be the better solution.  
+    Jonathan(4:03:54 PM): start them at different X values and different speeds  
+    Jonathan(4:04:02 PM): ie this.x = -100  
+    Jonathan(4:04:07 PM): right now they stack on each other  
+    Adam M.(4:05:39 PM): right it is a random of 4 lanes, so most of the time 1 or 2 stack.  
+    Adam M.(4:05:51 PM): sometimes all 4 stack.  
+    Adam M.(4:06:33 PM): ok cool thanks, that will get me going again.  
+    Jonathan(4:06:08 PM):   
+    Adam M.(4:07:15 PM): I appreciate it.  
+    Adam M.(4:08:23 PM): I was really happy when I got enemies on the screen and player movement, I showed the boys and the were like 'what does it do'.  
+    Adam M.(4:08:38 PM): no respect  
+    Adam M.(4:10:41 PM): I might just go back to 4 enemies 4 lanes, get it working with collisions and then start with the random stuff.  
+    Jonathan(4:09:45 PM): lol  
+    Jonathan(4:09:47 PM): hahaha  
+    Jonathan(4:09:57 PM): yeah, build the framework first  
+    Adam M.(4:11:45 PM): one of the guys here said go get note cards, everytime you have an idea that does not pertain to what you are doing write it down and stop thinking about it. When you get to that point then pull out that card.  
+    Adam M.(4:13:34 PM): I'm also starting to get use to the sublime shortcuts.
+  
+    Jonathan(4:12:48 PM): I love sublime  
+    Jonathan(4:13:04 PM): I have evernote for that   
+    Jonathan(4:13:12 PM): I just jot a note in evernote and tag it  
+    Jonathan(4:13:17 PM): then I can access it anywhere  
+    Adam M.(4:15:05 PM): ctrl-d then ctrl-d ctrl-d, ctrl-d type new var name, or whatever I'm replacing.  
+    Adam M.(4:15:25 PM): ctrl-L ctrl+shift+ up or down.  
+    Jonathan(4:21:15 PM): alright, going to go  
+    Jonathan(4:21:18 PM): have a good one

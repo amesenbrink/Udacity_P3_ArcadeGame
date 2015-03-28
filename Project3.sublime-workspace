@@ -1,0 +1,738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"regSet",
+				"regSetO"
+			],
+			[
+				"regset",
+				"regSetO"
+			],
+			[
+				"stop",
+				"stopParallels"
+			],
+			[
+				"all",
+				"allEnemies"
+			],
+			[
+				"key",
+				"key"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"say",
+				"sayGoodby"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"studen",
+				"Student"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"center",
+				"centerY"
+			],
+			[
+				"rName",
+				"rName"
+			],
+			[
+				"get-Ir",
+				"Get-ItemProperty"
+			],
+			[
+				"new",
+				"new"
+			],
+			[
+				"Set-item",
+				"Set-ItemProperty"
+			],
+			[
+				"New-Item",
+				"New-ItemProperty"
+			],
+			[
+				"target",
+				"target"
+			],
+			[
+				"targets",
+				"targets"
+			],
+			[
+				"fin",
+				"findTargets"
+			],
+			[
+				"rK",
+				"rKeys"
+			],
+			[
+				"myR",
+				"myReturnS"
+			],
+			[
+				"SSL",
+				"SSLServer"
+			],
+			[
+				"reg",
+				"reg"
+			],
+			[
+				"check",
+				"Checkpoint-Computer"
+			],
+			[
+				"set-item",
+				"Set-ItemProperty"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"path",
+				"path"
+			],
+			[
+				"glo",
+				"updateGlobal"
+			],
+			[
+				"Get-Ite",
+				"Get-ItemProperty"
+			],
+			[
+				"settings",
+				"settings"
+			],
+			[
+				"New-it",
+				"New-ItemProperty"
+			],
+			[
+				"updateSe",
+				"updateSettingsEven"
+			],
+			[
+				"star",
+				"startParallels"
+			],
+			[
+				"update",
+				"updateSettings"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"form",
+				"formattedDegree"
+			],
+			[
+				"educ",
+				"education-entry"
+			],
+			[
+				"artice",
+				"articleItem"
+			],
+			[
+				"fami",
+				"family1"
+			],
+			[
+				"dates",
+				"dates"
+			],
+			[
+				"HTML",
+				"HTMLcontactGeneric"
+			],
+			[
+				"toUp",
+				"toUpperCase"
+			],
+			[
+				"Name",
+				"names"
+			],
+			[
+				"forma",
+				"formattedName"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"Wid",
+				"width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"colr",
+				"background-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"Local",
+				"localDomain"
+			],
+			[
+				"g",
+				"get-service"
+			],
+			[
+				"exit",
+				"Exit"
+			],
+			[
+				"URL",
+				"URL"
+			],
+			[
+				"upda",
+				"updateURL"
+			],
+			[
+				"get-wi",
+				"Get-WmiObject"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"Patch",
+				"PatchXml"
+			],
+			[
+				"Pat",
+				"PatchFile"
+			],
+			[
+				"down",
+				"downloadDir"
+			],
+			[
+				"name",
+				"Name"
+			],
+			[
+				"sle",
+				"Start-Sleep"
+			],
+			[
+				"wrie",
+				"Write-Host"
+			],
+			[
+				"pa",
+				"PatchFile"
+			],
+			[
+				"TYPE",
+				"TYPE2"
+			],
+			[
+				"sshd",
+				"sshd"
+			],
+			[
+				"sudoers",
+				"sudoers"
+			],
+			[
+				"for",
+				"foreach"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"set syntax: power",
+				"Set Syntax: PowerShell"
+			],
+			[
+				"git: init",
+				"Git: Init"
+			],
+			[
+				"Package Control: remove Package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control: list packages",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: discover packages",
+				"Package Control: Discover Packages"
+			],
+			[
+				"set",
+				"Set Syntax: Powershell v2"
+			],
+			[
+				"install Pack	age",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import Powershell",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import powershell",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') ",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/inetpub/wwwroot/newGame/js/app.js",
+		"/C/inetpub/wwwroot/newGame/index.html",
+		"/C/inetpub/wwwroot/newGame/js/engine.js",
+		"/C/Users/am1949/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/inetpub/wwwroot/newGame/js/notesfromJon.txt",
+		"/C/inetpub/wwwroot/newGame/js/resources.js",
+		"/C/Users/am1949/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Tools/scripts/SetTCP-TimedWait.ps1",
+		"/C/Tools/scripts/NestedHashTables.ps1",
+		"/F/MyCygwin/cygwin64/home/am1949/1complete/LinuxConfig/updateConfigs.sh",
+		"/C/Tools/scripts/updateRedHat.sh",
+		"/F/MyCygwin/cygwin64/home/am1949/1complete/LinuxConfig/custom.sh",
+		"/C/Tools/IAC_Linux_config/add-bind-mounts.sh",
+		"/C/Tools/PVC-Updates/vzupdateV2.ps1",
+		"/C/Users/am1949/Desktop/PSLIA1-mRNG.xml",
+		"/C/Tools/PVC-Updates/pvcUpdateDownload.ps1",
+		"/C/Tools/PVC-Updates/vzupdate.ps1",
+		"/C/Tools/MSSNKA.rdg",
+		"/C/Tools/scripts/PVC-SSL-Disable-V2.ps1",
+		"/C/Tools/scripts/backup.txt",
+		"/C/Users/am1949/version-control/mdn/customObjectsSubClass.js",
+		"/C/inetpub/wwwroot/newGame/frontend-nanodegree-arcade-game/js/resources.js",
+		"/C/inetpub/wwwroot/newGame/frontend-nanodegree-arcade-game/js/engine.js",
+		"/C/Users/am1949/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/inetpub/wwwroot/newGame/frontend-nanodegree-arcade-game/index.html",
+		"/C/inetpub/wwwroot/newGame/frontend-nanodegree-arcade-game/js/app.js",
+		"/C/inetpub/wwwroot/game/js/app.js",
+		"/C/inetpub/wwwroot/newGame/frontend-nanodegree-arcade-game/js/appSample.js",
+		"/C/inetpub/wwwroot/game/js/resources.js",
+		"/C/inetpub/wwwroot/game/js/engine.js",
+		"/C/Users/am1949/version-control/p3/index.html",
+		"/C/Users/am1949/version-control/mdn/test.js",
+		"/C/Users/am1949/version-control/mdn/customObjects.js",
+		"/C/Users/am1949/version-control/p3/js/appSample.js",
+		"/C/Users/am1949/version-control/p3/js/engine.js",
+		"/C/inetpub/wwwroot/canvas/index.html",
+		"/C/inetpub/wwwroot/canvas/demo-setup.js",
+		"/C/inetpub/wwwroot/canvas/demo-full.js",
+		"/C/Users/am1949/version-control/mdn/objects1.js",
+		"/C/Users/am1949/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
+		"/C/inetpub/wwwroot/circle.html",
+		"/C/Tools/scripts/RunMe.ps1",
+		"/C/Users/am1949/version-control/p3/js/app.js",
+		"/C/Tools/scripts/ftpMon.ps1",
+		"/C/inetpub/wwwroot/game/index.html",
+		"/C/Tools/scripts/DisableSSL-PVC.ps1",
+		"/C/Users/am1949/Downloads/CalendarSyncFree294-Portable/Calendar Sync Free294/js/organictabs.jquery.js",
+		"/C/Users/am1949/Downloads/SChannel_SSL3_Patch_SourceFiles/Disable_SSL3.ps1",
+		"/C/Users/am1949/Downloads/CalendarSyncFree294-Portable/Calendar Sync Free294/Calendar Sync.exe.config",
+		"/C/inetpub/wwwroot/web.config",
+		"/C/inetpub/wwwroot/meme.html",
+		"/C/inetpub/wwwroot/memeMaker.html",
+		"/C/inetpub/wwwroot/convert2bw.html",
+		"/C/Tools/scripts/TAC2_IIS_SecUpdate_v6.ps1",
+		"/C/inetpub/wwwroot/memegen/mememaker.html",
+		"/C/Tools/PVC-Updates/updates.MSSNKA.xml",
+		"/C/Tools/PVC-Updates/updates.TUKRGI.xml",
+		"/C/Tools/scripts/Powershell_Old/checkRegKey.txt",
+		"/C/Users/am1949/version-control/p2/js/resumeBuilder.js",
+		"/C/Tools/PVC-Updates/updates.PSLIA1.xml",
+		"/C/Users/am1949/version-control/Project1/index.html",
+		"/C/Users/am1949/Documents/iac.tic.config.xml",
+		"/C/Users/am1949/Documents/tic.config.xml",
+		"/C/Users/am1949/version-control/p2/index.html",
+		"/C/Users/am1949/version-control/Project1/css/main.css",
+		"/C/Users/am1949/version-control/quizes.js",
+		"/C/Users/am1949/Downloads/host_env.sh",
+		"/C/Users/am1949/Downloads/sarah_changes.sh",
+		"/C/Tools/scripts/!Homedrive.ps1",
+		"/C/Users/am1949/Documents/WindowsPowerShell/Modules/posh-git/GitUtils.ps1",
+		"/C/Users/am1949/Documents/WindowsPowerShell/profile.ps1",
+		"/C/Program Files/Sublime Text 3/Packages/Default.sublime-package",
+		"/Q/Backup/UTIL/RDPLAUNCHER/WebServiceErrors/PACKAGE.CMD",
+		"/C/Users/am1949/Documents/Downloads/Q-Downloads/bak/GetDiskInfo.exe(1).txt",
+		"/C/Users/am1949/version-control/p2/css/style.css",
+		"/C/Users/am1949/version-control/p2/js/helper.js",
+		"/C/Users/am1949/version-control/quizes.txt",
+		"/C/Users/am1949/version-control/p2/readme.txt",
+		"/C/Users/am1949/version-control/project2/frontend-nanodegree-resume/index.html",
+		"/C/Users/am1949/version-control/project2/frontend-nanodegree-resume/js/resumeBuilder.js",
+		"/C/Users/am1949/version-control/project2/frontend-nanodegree-resume/js/helper.js",
+		"/C/Users/am1949/version-control/frontend-nanodegree-resume/js/resumeBuilder.js",
+		"/C/Users/am1949/version-control/frontend-nanodegree-resume/index.html",
+		"/F/project/jQuery Sample Site/jQuery Sample Site/app.js",
+		"/F/project/jQuery Sample Site/jQuery Sample Site/index.html",
+		"/F/project/scratch/index.html",
+		"/F/project/scratch/app.js",
+		"/C/Users/am1949/version-control/frontend-nanodegree-resume/resumeBuilderTest.js",
+		"/C/Tools/scripts/vzupdates.txt",
+		"/E/TUKRGIisilon.txt",
+		"/C/Users/am1949/Desktop/putty1.reg",
+		"/C/Temp/iac.tic.config.xml",
+		"/C/Users/am1949/Documents/Downloads/Q-Downloads/iac.tic.config.xml",
+		"/C/Users/am1949/version-control/frontend-nanodegree-resume/js/helper.js",
+		"/C/Tools/scripts/PVC-UpdateHost.ps1",
+		"/C/Users/am1949/version-control/frontend-nanodegree-resume/.git/COMMIT_EDITMSG",
+		"/C/Users/am1949/version-control/create-your-own-adventure/english/sing-song/sing.md",
+		"/C/Users/am1949/version-control/create-your-own-adventure/english/eating-walls/eating-marshmallows.md",
+		"/C/Users/am1949/version-control/create-your-own-adventure/.git/COMMIT_EDITMSG",
+		"/C/Users/am1949/version-control/recipes/.git/COMMIT_EDITMSG",
+		"/C/Users/am1949/version-control/recipes/cake-recipe.txt",
+		"/F/kindlegen.ps1",
+		"/F/Documents/epub/Book of Three, The - Lloyd Alexander.epub",
+		"/C/inetpub/wwwroot/default.html",
+		"/C/inetpub/wwwroot/myxmlTest.ps1",
+		"/C/inetpub/wwwroot/index.html",
+		"/C/Users/am1949/asteroids/index.html",
+		"/C/Users/am1949/asteroids/game.js",
+		"/C/Users/am1949/asteroids/instance",
+		"/C/Users/am1949/asteroids/.git/COMMIT_EDITMSG",
+		"/C/Tools/PVC-Updates/pvc-update-project.sublime-project",
+		"/C/Tools/scripts/PVCUpdates/PVCRegUpdate.ps1",
+		"/C/inetpub/wwwroot/style.css",
+		"/C/project/framework/framework/css/scratch.css",
+		"/C/project/framework/framework/page.html",
+		"/C/project/framework/framework/css/main.css",
+		"/C/project/framework/css/main.css",
+		"/C/project/framework/test.html",
+		"/F/project/framework/bootstrap-prestructure.html",
+		"/F/project/bootstrap-prestructure.html",
+		"/C/Tools/scripts/runMeV2.ps1",
+		"/C/Users/am1949/AppData/Roaming/Sublime Text 3/Packages/User/chrome.sublime-build",
+		"/C/Users/am1949/Documents/My MOPS/IIS-SSL_SecUpdate/TAC2_IIS_SecUpdate_v6.ps1",
+		"/C/Tools/scripts/mraSWSsearch.ps1",
+		"/F/software/FTL/start_ftl.bat",
+		"/C/Users/am1949/Desktop/DPClean.txt",
+		"/C/Tools/PVC-Updates/pvcUpdateDownload.v1.ps1",
+		"/F/software/gVimPortable/Data/settings/gVimPortableSettings.ini"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"password",
+			"\\{46562BA0-B13A-40D5-97E2-41C43196D29B}\\",
+			"\\{46562BA0-B13A-40D5-97E2-41C43196D29B}",
+			"vzupPath",
+			"dURL",
+			"VZUpdates",
+			"en",
+			"e",
+			"\\test\\backup\\",
+			"backup",
+			"logs",
+			"\\test\\backup\\lo",
+			"backup",
+			"\\test\\backup\\backuplogs\\log.txt",
+			"$rValues.rType",
+			"$rValues.rValue",
+			"rValues",
+			"$rValues.rValue",
+			"$rValues.rName",
+			"TcpTimedWaitDelay",
+			"TCPTimedWaitDelay",
+			"rValues.rName",
+			"tempSubPath",
+			"2",
+			"70",
+			"P",
+			"console",
+			"\"",
+			": \" &",
+			"`",
+			"try",
+			"propertiy",
+			"$regPath$SSLClient",
+			"$regPath$SSLServer",
+			"PropertyType",
+			"Tyep",
+			"tpye",
+			"$base$i$SSLpath$SSLType",
+			"$base$i$SSLpath",
+			"$sslpath$SSLType",
+			"ADBE677C-FFDA-4BB7-982F-D756A980A22C",
+			"058CF3D2-F660-43ED-851C-E9B0E8CBD78E",
+			"ADBE677C-FFDA-4BB7-982F-D756A980A22C",
+			"058CF3D2-",
+			"058CF3D2-F660-43ED-851C-E9B0E8CBD78E",
+			"ADBE677C-FFDA-4BB7-982F-D756A980A22C",
+			"$keyPath",
+			"$keepath",
+			"settings",
+			"'",
+			"googleMap",
+			"community",
+			"747D618C-869F-4C9E-B568-208729C8F72B",
+			"consumer",
+			"sched",
+			"formattedSkill",
+			"formattedskill",
+			"service",
+			"delaybeforebullet",
+			"src=\"holder",
+			"hostname",
+			"$env.computername",
+			"TaskSequence",
+			"eventtype",
+			"       1",
+			"       ",
+			"VZUpdates",
+			"\"LockSize\"=dword:000000003",
+			"\"LockSize\"=dword:000000002",
+			"\"LockSize\"=dword:000000004",
+			"\"LockSize\"=dword:00000001",
+			"\"LockSize\"=dword:00000004",
+			"\"LockSize\"=dword:00000002",
+			"KA03004CHIST2",
+			"if",
+			"<br />"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#",
+			"                                                      ",
+			"",
+			"$regPathC",
+			"$regPathS",
+			"Type",
+			"$regPath",
+			"$base$i$SSLpath$SSLType",
+			"$base$i$SSLpath",
+			"\"",
+			"data-src=\"holder",
+			"$env.computername",
+			"'TaskSequence'",
+			"entrytype",
+			"",
+			"\"LockSize\"=dword:00000000",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 33.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Project3.sublime-workspace",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\inetpub\\wwwroot\\newGame\\Project3.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 105.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,6 +1,6 @@
 // I needed some random numbers so rather than doing this over and over I made a function.
-var getNum = function(min, max) {
-  var number = Math.floor((Math.random() * (min, max) + min));
+var getNum = function(limit) {
+  var number = Math.floor((Math.random() * limit) + 1);
   return number;
 }
 
@@ -11,29 +11,16 @@ var Enemy = function(x, y) {
     // this.row = [60,145,220,310]
     // I needed a way to get the row 
     // this.rowSelect = getNum(4)
-    // this.x = 0;
-    //each enemy picks a row at random.
-    // this.y = this.row[this.rowSelect]
     this.x = x;
     this.y = y;
-    this.speed = getNum(50, 300);
-    this.row;
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+    this.speed = getNum(200);
     this.sprite = 'images/enemy-bug.png';
+
 }
-
-
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
     this.x = this.x + this.speed * dt;
-    if (this.x > 555) {
-        this.x = -45;
-    }
 
 
     // You should multiply any movement by the dt parameter
@@ -44,9 +31,18 @@ Enemy.prototype.update = function(dt) {
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    if(this.x > 535) {
+      console.log("reset enemy") 
+      this.x = -45;
+    }  
 }
 
 var allEnemies = [new Enemy(-45,60), new Enemy(-45,226), new Enemy(-45,309), new Enemy(-45,392)];
+
+// Enemy.prototype.new = function(){
+// allEnemies.push(new Enemy)
+// }
+
 
 // Now write your own player class
 // This class requires an update(), render() and
@@ -64,7 +60,6 @@ var player = function() {
 
 }
 
-
  player.prototype.update = function(x, y) {
   console.log(this.x, this.y)
   
@@ -77,7 +72,7 @@ var player = function() {
 player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 }
-
+// Player controls 
 player.prototype.handleInput = function(direction) {
     switch(direction) {
         case 'left':
@@ -96,7 +91,7 @@ player.prototype.handleInput = function(direction) {
             }
             break;
         case 'down':
-            if(this.y + 83 <= 550) {
+            if(this.y + 83 <= 606) {
                 this.y = this.y + 83;
             }
             break;
