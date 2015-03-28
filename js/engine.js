@@ -26,7 +26,7 @@ var Engine = (function(global) {
         lastTime;
 
     canvas.width = 505;
-    canvas.height = 606;
+    canvas.height = 772;
     doc.body.appendChild(canvas);
 
     /* This function serves as the kickoff point for the game loop itself
@@ -108,14 +108,15 @@ var Engine = (function(global) {
          * for that particular row of the game level.
          */
         var rowImages = [
-                'images/water-block.png',   // Top row is water
-                'images/stone-block.png',   // Row 1 of 3 of stone
+                'images/stone-block.png',   // Place holder top row
                 'images/stone-block.png',   // Row 2 of 3 of stone
-                'images/stone-block.png',   // Row 3 of 3 of stone
                 'images/grass-block.png',   // Row 1 of 2 of grass
+                'images/stone-block.png',   // Row 3 of 3 of stone
+                'images/stone-block.png',   // Row 3 of 3 of stone
+                'images/stone-block.png',   // Row 3 of 3 of stone
                 'images/grass-block.png'    // Row 2 of 2 of grass
             ],
-            numRows = 6,
+            numRows = 7,
             numCols = 5,
             row, col;
 
@@ -123,7 +124,13 @@ var Engine = (function(global) {
          * and, using the rowImages array, draw the correct image for that
          * portion of the "grid"
          */
-        for (row = 0; row < numRows; row++) {
+         // Alternating tile top row
+         ctx.drawImage(Resources.get('images/water-block.png'), 0 * 101, 0 * 83);
+         ctx.drawImage(Resources.get('images/grass-block.png'), 1 * 101, 0 * 83);
+         ctx.drawImage(Resources.get('images/water-block.png'), 2 * 101, 0 * 83);
+         ctx.drawImage(Resources.get('images/grass-block.png'), 3 * 101, 0 * 83);
+         ctx.drawImage(Resources.get('images/water-block.png'), 4 * 101, 0 * 83);
+        for (row = 1; row < numRows; row++) {
             for (col = 0; col < numCols; col++) {
                 /* The drawImage function of the canvas' context element
                  * requires 3 parameters: the image to draw, the x coordinate
